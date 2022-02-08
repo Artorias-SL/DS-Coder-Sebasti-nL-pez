@@ -5,17 +5,19 @@ body{
 }
 h1{
     margin: 0px;
-    width: 30%;
-    padding-left: 1%;
-    text-decoration: underline;
-    font-size: 2rem;
+    margin-right: 0px;
+    width: 50%;
+    padding-left: 2rem;
+    font-size: 25px;
     letter-spacing: 2px;
     color:#41BBD9 ;
     font-style: italic;
 }
+.mitadLogo{
+    text-transform:uppercase;
+}
 h2{
-    padding-top: 5%;
-    padding-left: 0.2rem;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -37,12 +39,13 @@ a:hover{
 /*header*/
 header{
     background-color: #212529;
-    height: 5rem;
+    height: 80px;
     width: 100%;
 }
 .header{
-   padding-top: 20px;
     width: 100%;
+    padding-top: 10px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,6 +123,11 @@ ol li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.carousel-inner img{
+    width: 40rem!important;
+    height: 22rem!important;
+    transform: none;
 }
 .container{
     border-radius: 20px;
@@ -244,8 +252,8 @@ tr, td {
     border-color: black;
 }
 table img{
-    width: 30px;
-    height: 30px;
+    width: 90%;
+    height: 60px;
 }
 /*formulario*/
 form{
@@ -253,6 +261,12 @@ form{
     justify-content: end;
     flex-direction: column;
     width: 100%;
+}
+.formulario
+{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 input{
     background-color: whitesmoke;
@@ -262,14 +276,14 @@ input{
     margin-left: 20%;
     width: 60%;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 15px!important;
 }
 textarea{
     background-color:whitesmoke;
     opacity: 0.6;
     width: 45%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px!important;
 }
 label{
     display: flex;
@@ -278,14 +292,6 @@ label{
 label input{
     width: 5%;
     margin: 0%;
-}
-.buttons{
-    display: flex;
-    justify-content:center;
-    width: 36%;
-    margin-left: 32%;
-    margin-right: 32%;
-    flex-direction: column;
 }
 .buttons input{
     display: flex;
@@ -297,10 +303,10 @@ button{
     background-color: whitesmoke;
     opacity: 0.6;
     width: 20%;
-    margin-top: 2%;
+    margin-top:0.5rem!important;
     width: 100%;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 15px!important;
 }
 /*footer*/
 footer{
@@ -330,8 +336,6 @@ footer img{
     .header a{
         display: flex;
         justify-content: center;
-        width: 95%;
-        padding-bottom: 6px;
     }
     .header h1{
         width: 100%;
@@ -396,11 +400,10 @@ footer img{
         display: flex;
         justify-content: center;
     }
-    .form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px;
+    .formulario{
+        margin-left: 10%;
+        margin-right:20%;
+        width: 80%;
     }
     iframe{
         width:80%;
