@@ -31,43 +31,41 @@
     </header>
     <h2>Contactanos</h2>   
     <section class="formulario">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <div class="inputs">
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-          </div>
-          <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="default input example">
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Asunto"></textarea>
-          </div>
+            <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="default input example">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Asunto"></textarea>
+            </div>
         </div>
-         <!-- Button to Open the Modal -->
-         <button type="button" class="submit" data-toggle="modal" data-target="#myModal">
-            Enviar
-       </button>
-       <!-- The Modal -->
-       <div class="modal" id="myModal">
-           <div class="modal-dialog">
-               <div class="modal-content">
-                   <!-- Modal Header -->
-                   <div class="modal-header">
-                     <h4 class="modal-title">Formulario Enviado</h4>
-                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                   </div>
-                   <!-- Modal body -->
-                    <div class="modal-body">
-                       El formulario se envio con exito
-                   </div>
-
-                   <!-- Modal footer -->
-                  <div class="modal-footer">
-                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <button type="reset">Resetear</button>
-       </div>
+        <!-- Button to Open the Modal -->
+        <section class="buttons">
+            <button type="button" class="submit" data-toggle="modal" data-target="#myModal">
+                Enviar
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Formulario Enviado</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            El formulario se envio con exito
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="reset">Resetear</button>
+        </section>
     </section>
     <h3 align="center">Nuestra ubicacion</h3>
     <div class="map">

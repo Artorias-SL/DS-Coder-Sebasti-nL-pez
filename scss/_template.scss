@@ -1,0 +1,101 @@
+body{
+    font-family:'Muli', sans-serif;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );;
+    margin: 0px;
+}
+h1{
+    margin: 0px;
+    margin-right: 0px;
+    width: 50%;
+    padding-left: 2rem;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color:#41BBD9 ;
+    font-style: italic;
+    a{
+        font-size: 2rem;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+    .mitadLogo{
+        text-transform:uppercase;
+    }
+}
+h2{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    padding-left: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 6px;
+    &:hover{
+        color: #41BBD9;
+        transition: 250ms all;
+        text-decoration: none;
+    }
+}
+/*header*/
+header{
+    background-color: #212529;
+    height: 5.2rem;
+    width: 100%;
+    .header{
+        width: 100%;
+        padding-top: 1.2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+ol{
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:end;
+    padding-right: 0.7rem;
+    li{
+        display: inline;
+    }
+}
+.menu{
+    ul{
+        display: none;
+        padding: 0.2rem;
+    }
+    &:hover ul{
+        display: block;
+        position: absolute;
+        background-color: #212529;
+    }
+    .subMenu{
+        li{
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }
+    }
+}
+/*footer*/
+footer{
+    background-color: #09182c;
+    margin-top: 4rem;
+    flex-shrink:0;
+    padding-top: 2rem;
+    img{
+        width: 40px;
+    }
+}
