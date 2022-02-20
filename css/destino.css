@@ -4,18 +4,10 @@ body {
   margin: 0px; }
 
 h1 {
-  margin: 0px;
-  margin-right: 0px;
-  width: 50%;
-  padding-left: 2rem;
-  font-size: 25px;
   letter-spacing: 2px;
   color: #41BBD9;
-  font-style: italic; }
-  h1 a {
-    font-size: 2rem; }
-    h1 a:hover {
-      background-color: transparent; }
+  font-style: italic;
+  font-size: 2.5rem; }
   h1 .mitadLogo {
     text-transform: uppercase; }
 
@@ -48,11 +40,12 @@ header {
   width: 100%; }
   header .header {
     width: 100%;
-    padding-top: 1.2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
+    header .header nav {
+      width: 100%; }
 
 ol {
   margin: 0px;
@@ -134,7 +127,6 @@ p {
     width: 40%;
     padding: 0%; }
     .carrusel .interior .carousel-inner img {
-      height: 22rem;
       border-radius: 5%;
       transform: none; }
 
@@ -238,6 +230,27 @@ p {
   background-color: steelblue;
   border-radius: 30px; }
 
+.clients {
+  display: flex;
+  flex-direction: row; }
+  .clients img {
+    width: 40%; }
+  .clients .clients_content {
+    padding: 0%;
+    padding-top: 2%;
+    flex-direction: column; }
+    .clients .clients_content .logo-container {
+      width: 100%; }
+      .clients .clients_content .logo-container .logo-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; }
+        .clients .clients_content .logo-container .logo-images img {
+          width: 20%;
+          height: 10%;
+          padding: 3%; }
+
 .work {
   display: flex;
   flex-wrap: wrap;
@@ -284,38 +297,33 @@ p {
       display: flex;
       justify-content: center;
       background-color: whitesmoke;
+      color: black;
       opacity: 0.6;
       margin-top: 0.5rem;
       width: 100%;
       padding: 5px;
       border-radius: 15px; }
+    .formulario .buttons .btn-close {
+      width: 10%;
+      background-color: #4361EE; }
 
 .map {
   display: flex;
   justify-content: center; }
 
-@media (max-width: 700px) {
-  header {
-    height: 7rem; }
-    header .header {
-      padding-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      header .header a {
-        display: flex;
-        justify-content: center; }
-      header .header h1 {
-        width: 100%;
-        margin: 0px;
-        padding: 0%; }
-      header .header ol {
-        padding-left: 0px;
-        padding-right: 0rem;
-        margin: 0px;
-        width: 100%; }
+iframe {
+  width: 40rem;
+  height: 15rem; }
+
+@media only screen and (max-width: 1300px) and (min-width: 768px) {
+  .carrusel .interior {
+    width: 55%; }
+  .clients .clients_content .logo-container .logo-images img {
+    width: 25%; } }
+
+@media only screen and (max-width: 790px) and (min-width: 600px) {
   h2 {
-    padding-top: 20%;
+    padding-top: 10%;
     text-align: center; }
   .box {
     flex-direction: column; }
@@ -352,15 +360,20 @@ p {
     padding: 0%;
     padding-top: 10%; }
     .carrusel .interior {
-      width: 100%; }
-      .carrusel .interior .carousel-inner img {
-        width: 10rem;
-        height: 12rem; }
+      width: 70%; }
   /**/
   .about h2 {
     padding: 0px;
     display: flex;
     justify-content: center; }
+  .clients {
+    flex-direction: column;
+    align-items: center; }
+    .clients img {
+      width: 60%;
+      align-items: center; }
+    .clients .clients_content .logo-container .logo-images img {
+      width: 30%; }
   .work {
     display: flex;
     justify-content: center; }
@@ -374,7 +387,29 @@ p {
       width: 80%; }
   iframe {
     width: 80%;
-    height: 100%; }
+    height: 15rem; }
+  .footer_Links {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+  .carrusel {
+    padding: 0%;
+    padding-top: 10%; }
+    .carrusel .interior {
+      width: 100%; }
+  .clients {
+    flex-direction: column;
+    align-items: center; }
+    .clients img {
+      width: 75%; }
+    .clients .clients_content .logo-container .logo-images img {
+      width: 40%; }
+  .formulario .buttons {
+    padding: 0%; }
+  iframe {
+    width: 80%;
+    height: 15rem; }
   .footer_Links {
     display: flex;
     flex-direction: column; } }

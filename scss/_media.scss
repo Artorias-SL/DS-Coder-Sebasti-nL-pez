@@ -1,30 +1,25 @@
-@media (max-width: 700px){
-    header{
-        height: 7rem;
-        .header{
-            padding-top: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            a{
-                display: flex;
-                justify-content: center;
-            }
-            h1{
-                width: 100%;
-                margin: 0px;
-                padding: 0%;
-            }
-            ol{
-                padding-left: 0px;
-                padding-right: 0rem;
-                margin: 0px;
-                width: 100%;
+@media only screen and (max-width: 1300px) and (min-width: 768px)  {
+    .carrusel{
+        .interior{
+            width: 55%;
+        }
+    }
+    .clients{
+        .clients_content{
+            .logo-container{
+                .logo-images{
+                    img{
+                        width: 25%;
+                    }
+                }
             }
         }
     }
+}
+
+@media only screen and (max-width: 790px) and (min-width: 600px){
     h2{
-        padding-top: 20%;
+        padding-top: 10%;
         text-align: center;
     }
 
@@ -72,22 +67,31 @@
         padding: 0%;
         padding-top: 10%;
         .interior{
-            width: 100%;
-            .carousel-inner{
-                img{
-                    width: 10rem;
-                    height: 12rem;
-                }
-            }
+            width: 70%;
         }
     }
-    
-    
     /**/
     .about h2{
         padding: 0px;
         display: flex;
         justify-content: center;
+    }
+    .clients{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 60%;
+            align-items: center ;
+        }
+        .clients_content{
+            .logo-container{
+                .logo-images{
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+        }
     }
     .work{
         display: flex;
@@ -106,7 +110,46 @@
     }
     iframe{
         width:80%;
-        height: 100%;
+        height: 15rem;
+
+    }
+    .footer_Links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px) and (min-width: 200px)  {
+    .carrusel{
+        padding: 0%;
+        padding-top: 10%;
+        .interior{
+            width: 100%;
+        }
+    }
+    .clients{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 75%;
+        }
+        .clients_content{
+            .logo-container{
+                .logo-images{
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    .formulario{
+        .buttons{
+            padding: 0%;
+        }
+    }
+    iframe{
+        width: 80%;
+        height: 15rem;
     }
     .footer_Links{
         display: flex;

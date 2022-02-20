@@ -24,10 +24,10 @@ p{
     flex-wrap:nowrap;
     .interior{
         width: 40%;
+      
         padding: 0%;
         .carousel-inner{ 
             img{
-                height: 22rem;
                 border-radius: 5%;
                 transform: none;
             }
@@ -140,6 +140,32 @@ p{
     background-color: steelblue;
     border-radius: 30px;
 }
+.clients{
+    display: flex;
+    flex-direction: row;
+    img{
+                width: 40%;
+    }
+    .clients_content{
+        padding: 0%;
+        padding-top: 2%;
+        flex-direction: column;
+        .logo-container{
+            width: 100%;
+            .logo-images{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                img{
+                    width: 20%;
+                    height: 10%;
+                    padding: 3%;
+                }
+            }
+        }
+    }   
+}
 .work{
     display: flex;
     flex-wrap: wrap;
@@ -192,15 +218,24 @@ p{
             display: flex;
             justify-content: center;
             background-color: whitesmoke;
+            color: black;
             opacity: 0.6;
             margin-top:0.5rem;
             width: 100%;
             padding: 5px;
             border-radius: 15px;
         }
+        .btn-close{
+            width: 10%;
+            background-color:#4361EE;
+        }
     }
 }
 .map{
     display: flex;
     justify-content: center;
+}
+iframe{
+    width: 40rem;
+    height: 15rem;
 }
