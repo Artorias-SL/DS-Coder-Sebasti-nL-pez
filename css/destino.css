@@ -41,36 +41,11 @@ header {
   header .header {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row; }
+    align-items: center; }
     header .header nav {
       width: 100%; }
-
-ol {
-  margin: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: end;
-  padding-right: 0.7rem; }
-  ol li {
-    display: inline; }
-
-.menu ul {
-  display: none;
-  padding: 0.2rem; }
-
-.menu:hover ul {
-  display: block;
-  position: absolute;
-  background-color: #212529; }
-
-.menu .subMenu li {
-  color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  padding: 5px; }
 
 /*footer*/
 footer {
@@ -101,6 +76,45 @@ footer {
       width: 90%;
       height: 60px; }
 
+.sitios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .sitios .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    background-color: #09182c;
+    color: whitesmoke; }
+    .sitios .card img {
+      width: 70%;
+      height: 50%; }
+    .sitios .card:hover {
+      transform: scale(1.1);
+      transition: 300ms all; }
+    .sitios .card h5 {
+      display: flex;
+      justify-content: center;
+      font-weight: bolder; }
+    .sitios .card p {
+      margin-bottom: 10%; }
+    .sitios .card a {
+      display: flex;
+      justify-content: center; }
+
+.faq h3 {
+  margin-bottom: 2rem; }
+
+.faq #accordion {
+  color: whitesmoke; }
+  .faq #accordion .card {
+    background-color: #09182c; }
+    .faq #accordion .card button {
+      color: whitesmoke;
+      font-weight: bolder; }
+
 /*contenido*/
 section {
   padding: 2rem; }
@@ -113,9 +127,9 @@ article {
   padding-top: 40px; }
 
 p {
-  text-align: center;
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 5px; }
 
 /***************Carousel**************/
@@ -133,22 +147,46 @@ p {
 /**/
 .product-Content {
   display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
 
 .container {
   border-radius: 20px;
-  width: 200px;
-  height: 200px;
-  text-align: center; }
-  .container:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  width: 15rem;
+  height: 18rem;
+  padding: 0%;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #dfdfdf; }
+  .container p {
+    padding-top: 15%;
+    padding-bottom: 15%; }
+  .container button {
+    font-size: 20px;
+    font-variant: small-capss;
+    width: 60%;
+    border-radius: 10px;
     background-color: #4361EE;
-    transition: 300ms all; }
+    border-color: transparent; }
+    .container button:hover {
+      background-color: #74b6f7;
+      transition: transform(0.6s); }
+  .container .strong {
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 8%; }
+  .container .line {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #4361EE;
+    width: 80%;
+    height: 2px; }
 
 .box {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding-bottom: 4%; }
   .box .box-Container {
@@ -220,8 +258,8 @@ p {
 
 .about_Descripcion {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .about_Descripcion p {
   padding-top: 3rem;
@@ -232,7 +270,8 @@ p {
 
 .clients {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
   .clients img {
     width: 40%; }
   .clients .clients_content {
@@ -253,8 +292,8 @@ p {
 
 .work {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 /*formulario*/
 .formulario {
@@ -349,7 +388,7 @@ iframe {
   .about_Descripcion {
     justify-content: center; }
   .about_Descripcion img {
-    width: 100%;
+    width: 60%;
     height: 40%; }
   .about_Descripcion p {
     padding: 20px 10px 10px 10px; }
