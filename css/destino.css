@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+  margin: 0%; }
+
 body {
   font-family: 'Muli', sans-serif;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
@@ -16,7 +20,10 @@ h1 {
     text-transform: uppercase; }
 
 h2 {
-  padding-top: 50px;
+  padding-top: 6rem;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   justify-content: center; }
 
@@ -44,6 +51,8 @@ header {
   width: 100%; }
   header .header {
     width: 100%;
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,16 +129,16 @@ footer {
       font-weight: bolder; }
 
 /*contenido*/
-section {
-  padding: 2rem; }
-
 article {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 1.2rem;
   width: 100%;
-  padding-top: 40px; }
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 p {
   display: flex;
@@ -155,7 +164,10 @@ p {
       transform: none; }
 
 .faq .accordion {
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: #09182c;
+  width: 80%;
   color: whitesmoke; }
   .faq .accordion h2 {
     padding: 10px;
@@ -187,6 +199,8 @@ p {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap; }
+  .product-Content table {
+    margin: 2%; }
   .product-Content .card {
     display: flex;
     justify-content: center;
@@ -362,6 +376,12 @@ p {
     padding-top: 2%;
     font-size: 1.2rem;
     flex-direction: column; }
+    .clients .clients_content .clients-text {
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+      display: flex;
+      justify-content: center; }
     .clients .clients_content .logo-container {
       width: 100%; }
       .clients .clients_content .logo-container .logo-images {
@@ -546,6 +566,9 @@ iframe {
     justify-content: center;
     padding: 0%;
     padding-top: 10%; }
+  .about_Descripcion img {
+    width: 18rem;
+    height: 12rem; }
   .description-content {
     width: 100%; }
     .description-content p {

@@ -1,4 +1,8 @@
 @import "_var";
+html{
+    width: 100%;
+    margin: 0%;
+}
 body{
     font-family:'Muli', sans-serif;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );;
@@ -18,7 +22,10 @@ h1{
     }
 }
 h2{
-    padding-top: 50px;
+    padding-top: 6rem;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     @include flex-center;
 }
 h3{
@@ -45,6 +52,8 @@ header{
     width: 100%;
     .header{
         width: 100%;
+        position: relative;
+        z-index: 2;
         @include flex-row;
         justify-content: space-between;
         align-items: center;

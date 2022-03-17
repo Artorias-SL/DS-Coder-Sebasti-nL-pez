@@ -1,15 +1,14 @@
 @import"_var";
 /*contenido*/
-section{
-    padding: 2rem;
-    
-}
 article{
     @include flex-center;
     text-align: center;
     font-size: 1.2rem;
     width: 100%;
-    padding-top:40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2rem;
+    padding-bottom: 2rem;
 }
 p{
     @include flex-center;
@@ -39,7 +38,10 @@ p{
 }
 .faq{
     .accordion{
+        margin-left: 10%;
+        margin-right: 10%;
         background-color: #09182c;
+        width:80%;
         color: whitesmoke;
         h2{
             padding: 10px;
@@ -74,6 +76,9 @@ p{
 .product-Content{
     @include flex-row-center;
     flex-wrap: wrap;
+    table{
+        margin: 2%
+    }
     .card{
         @include flex-center;
         border-radius: 10px;
@@ -264,6 +269,12 @@ p{
         padding-top: 2%;
         font-size: 1.2rem;
         flex-direction: column;
+        .clients-text{
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            @include flex-center;
+        }
         .logo-container{
             width: 100%;
             .logo-images{
